@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "ES5",
+    "allowJs": false,
+    "declaration": true,
+    "declarationDir": "./src",
+    "newLine": "LF"
+  },
+  "include": ["./src/*.ts"],
+  "exclude": ["node_modules"]
+}

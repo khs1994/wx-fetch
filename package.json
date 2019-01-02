@@ -1,0 +1,8 @@
+{
+  "name": "wx-fetch",
+  "main": "lib/index.js",
+  "types": "src/index.d.ts",
+  "devDependencies":{
+    "@types/wx": "github:khs1994/types-wx"
+  }
+}
