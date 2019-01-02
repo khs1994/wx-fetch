@@ -310,3 +310,6 @@ export default function fetch(input: string, init: FetchInitInterface = {}) {
     });
   });
 }
+
+// @ts-ignore
+module.exports = fetch;
