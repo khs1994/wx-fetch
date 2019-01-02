@@ -242,7 +242,19 @@ export class Response implements Response {
   }
 
   arrayBuffer() {
-    return this.text();
+    if (this.body instanceof ArrayBuffer) {
+      return Promise.resolve(this.body);
+    }
+
+    return Promise.reject('Not Support');
+  }
+
+  buffer() {
+    if (this.body instanceof ArrayBuffer) {
+      return Promise.resolve(new Uint8Array(this.body));
+    }
+
+    return Promise.reject('Not Support');
   }
 
   blob() {

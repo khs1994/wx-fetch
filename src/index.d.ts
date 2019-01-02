@@ -67,7 +67,8 @@ export declare class Response implements Response {
     clone(): Response;
     error(): Response;
     redirect(url: any, status: any): Response;
-    arrayBuffer(): any;
+    arrayBuffer(): Promise<ArrayBuffer>;
+    buffer(): Promise<Uint8Array>;
     blob(): any;
     formData(): any;
     json(): any;
