@@ -1,5 +1,6 @@
 {
   "name": "wx-fetch",
+  "version": "18.12.0-alpha.0",
   "main": "lib/index.js",
   "types": "src/index.d.ts",
   "devDependencies":{
