@@ -12,7 +12,6 @@ $ npm i github:khs1994/wx-fetch
 ```js
 // ts
 import fetch from 'wx-fetch';
-import fetch = require('wx-fetch');
 
 // js
 const fetch = require('wx-fetch');

@@ -1,7 +1,3 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
 function normalizeName(name) {
     if (typeof name !== 'string') {
         name = String(name);
@@ -204,6 +200,4 @@ function fetch(input, init = {}) {
     });
 }
 
-module.exports = exports = fetch;
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = exports;
+export default fetch;

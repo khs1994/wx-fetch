@@ -56,7 +56,7 @@ interface Request extends Body {
 /**
  * @see https://developer.mozilla.org/en-US/docs/Web/API/Response
  */
-export interface Response extends Body {
+interface Response extends Body {
 
 }
 
@@ -192,7 +192,7 @@ function consumed(body: any): any {
   body.bodyUsed = true
 }
 
-export class Response implements Response {
+class Response implements Response {
   readonly headers: Headers;
   readonly ok: boolean;
   readonly redirected: boolean;
@@ -322,6 +322,3 @@ export default function fetch(input: string, init: FetchInitInterface = {}) {
     });
   });
 }
-
-// @ts-ignore
-module.exports = fetch;
