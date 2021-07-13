@@ -293,7 +293,8 @@ export default function fetch(input: string, init: FetchInitInterface = {}) {
   new Request();
   return new Promise((resolve, reject) => {
     init.charset = init.charset || 'utf8';
-
+    
+    // @ts-ignore
     wx.request({
       url: input,
       data: init.body || undefined,

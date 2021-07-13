@@ -16,5 +16,5 @@ interface FetchInitInterface extends Object {
     signal?: any;
     charset?: string;
 }
-export default function fetch(input: string, init?: FetchInitInterface): Promise<{}>;
+export default function fetch(input: string, init?: FetchInitInterface): Promise<unknown>;
 export {};

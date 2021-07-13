@@ -1,3 +1,4 @@
+var _a;
 function normalizeName(name) {
     if (typeof name !== 'string') {
         name = String(name);
@@ -28,7 +29,7 @@ function iteratorFor(items) {
 }
 class Headers {
     constructor(headers) {
-        this[Symbol.iterator] = this.entries;
+        this[_a] = this.entries;
         this.map = {};
         if (headers instanceof Headers) {
             headers.forEach((value, name) => {
@@ -95,6 +96,7 @@ class Headers {
         return iteratorFor(items);
     }
 }
+_a = Symbol.iterator;
 let redirectStatuses = [301, 302, 303, 307, 308];
 // body 不能重复读取
 function consumed(body) {
@@ -174,6 +176,7 @@ function parseHeaders(rawHeaders) {
 function fetch(input, init = {}) {
     return new Promise((resolve, reject) => {
         init.charset = init.charset || 'utf8';
+        // @ts-ignore
         wx.request({
             url: input,
             data: init.body || undefined,

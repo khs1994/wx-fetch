@@ -7,11 +7,10 @@
   "types": "types/index.d.ts",
   "miniprogram": "lib",
   "devDependencies": {
-    "@types/wx": "github:khs1994/types-wx",
     "rollup": "^1.12.3",
     "rollup-plugin-typescript": "^1.0.1",
-    "typescript": "^3.4.5",
-    "tslib": "^1.9.3"
+    "typescript": "^4.3.5",
+    "tslib": "^2.3.0"
   },
   "scripts": {
     "build": "npx tsc && npx rollup -c rollup.config.js"
